@@ -105,7 +105,7 @@ G = bipartite.weighted_projected_graph(B, plants)
 list(G.edges(data=True))[0]
 
 # Create co-affiliation network
-G = bipartite.overlap_weighted_projected_graph(B, pollinators)
+G = bipartite.overlap_weighted_projected_graph(B, pollinators) #Overlap weighted projection of B onto one of its node sets
 # Get weights
 weight = [G.edges[e]['weight'] for e in G.edges]
 # Create figure
