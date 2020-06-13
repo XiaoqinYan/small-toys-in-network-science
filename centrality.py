@@ -41,10 +41,10 @@ sorted(betweenness.items(), key=lambda x:x[1], reverse=True)[0:10]
 eigenvector = nx.eigenvector_centrality(G) #Compute the eigenvector centrality for the graph G
 sorted(eigenvector.items(), key=lambda x:x[1], reverse=True)[0:10]
 
-closeness = nx.closeness_centrality(G)
+closeness = nx.closeness_centrality(G) # Compute the closeness centrality for nodes in a bipartite network
 sorted(closeness.items(), key=lambda x:x[1], reverse=True)[0:10]
 
-triangles = nx.triangles(G)
+triangles = nx.triangles(G) 
 sorted(triangles.items(), key=lambda x:x[1], reverse=True)[0:10]
 
 clustering = nx.clustering(G)
