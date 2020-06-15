@@ -131,7 +131,7 @@ G_frank = co_occurrence_network(text)
 
 # Count co-occurrences for frankenstein node
 focus = 'monster'
-neighbors = list(G_frank.neighbors(focus))
+neighbors = list(G_frank.neighbors(focus)) # Returns a list of nodes connected to node n
 counts = dict(
     (v, G_frank.edges[(focus, v)]['count'])
     for v in neighbors)
