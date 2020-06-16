@@ -164,7 +164,7 @@ cliques = list(nx.find_cliques(G_karate))
 cliques
 
 # Find maximum clique
-max_clique = max(cliques, key=len)
+max_clique = max(cliques, key=len) # a largest complete subgraph containing v
 max_clique
 
 # Visualize maximum clique
