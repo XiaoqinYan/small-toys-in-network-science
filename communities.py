@@ -110,7 +110,7 @@ nx.draw_networkx(
     G_social, pos=pos, node_size=0, edgelist=internal, edge_color=internal_color,
     alpha=0.05, with_labels=False)
 
-result = nxcom.girvan_newman(G_karate)
+result = nxcom.girvan_newman(G_karate) # Finds communities in a graph using the Girvan–Newman method
 communities = next(result)
 len(communities)
 
