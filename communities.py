@@ -176,7 +176,7 @@ nx.draw_networkx(G_karate, node_color=node_color, pos=karate_pos)
 
 # Find k-cores
 G_core_30 = nx.k_core(G_social, 30)
-G_core_60 = nx.k_core(G_social, 60)
+G_core_60 = nx.k_core(G_social, 60) # The k-core is found by recursively pruning nodes with degrees less than k
 
 # Visualize network and k-cores
 nx.draw_networkx(
