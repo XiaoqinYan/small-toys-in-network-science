@@ -136,7 +136,7 @@ nx.draw_networkx(
     edgelist=internal, edge_color=internal_color)
 
 import itertools
-result = nxcom.girvan_newman(G_karate)
+result = nxcom.girvan_newman(G_karate) # Finds communities in a graph using the Girvan–Newman method
 communities = next(itertools.islice(result, 2, 3))
 
 # Set node and edge communities
