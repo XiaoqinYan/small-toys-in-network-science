@@ -63,7 +63,7 @@ G_adj = nx.read_adjlist(str(data_dir / 'example.adjlist'))
 for v in G.nodes:
     G.nodes[v]['abbreviation'] = v[0]
 import sys
-nx.write_gexf(G, sys.stdout)
+nx.write_gexf(G, sys.stdout) # Write G in GEXF format to path.
 
 nx.node_link_data(G)
 
