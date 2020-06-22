@@ -106,8 +106,7 @@ G_random = nx.watts_strogatz_graph(4000, 10, 1)
 
 nx.average_shortest_path_length(G_random)
 
-nx.average_clustering(G_random)
-
+nx.average_clustering(G_random) # Compute the average bipartite clustering coefficient
 path = []
 clustering = []
 # Try a range of rewiring probabilities
