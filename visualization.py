@@ -35,7 +35,7 @@ def community_net(G_in):
     G_out = nx.Graph()
     node_color = []
     node_community = {}
-    communities = nxcom.greedy_modularity_communities(G_in)
+    communities = nxcom.greedy_modularity_communities(G_in) # This method currently supports the Graph class and does not consider edge weights
     for i, com in enumerate(communities):
         for v in com:
             G_out.add_node(v)
