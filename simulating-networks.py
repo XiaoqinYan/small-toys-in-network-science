@@ -37,7 +37,8 @@ for i, p in enumerate([0.0, 0.1, 1.0]):
     plt.title("p = {:0.1f}".format(p))
     
 G_preferential_35 = nx.barabasi_albert_graph(35, 1)
-pos = nx.spring_layout(G_preferential_35, k=0.1)
+pos = nx.spring_layout(G_preferential_35, k=0.1) # Returns a random graph according to the Barabási–Albert preferential attachment model
+
 nx.draw_networkx(G_preferential_35, pos)
 
 G_preferential_500 = nx.barabasi_albert_graph(500, 1)
