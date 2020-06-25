@@ -160,7 +160,7 @@ for e in G_residual.edges:
         G_residual, pos=pos, edgelist=[e], edge_color='#7f7fff', alpha=alpha, arrows=False)
 ax.set_aspect(1)
 
-nx.average_clustering(G_air)
+nx.average_clustering(G_air) # Compute the average bipartite clustering coefficient.
 
 nx.average_clustering(G_residual)
 
