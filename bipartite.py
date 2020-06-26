@@ -78,7 +78,7 @@ nx.draw_networkx_labels(B, pos)
 plt.savefig('output-4.1.png', dpi=150)
 
 # Create co-affiliation network
-G = bipartite.projected_graph(B, plants)
+G = bipartite.projected_graph(B, plants) # Returns the projection of B onto one of its node sets 
 # Create figure
 plt.figure(figsize=(24,24))
 # Calculate layout
