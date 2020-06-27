@@ -99,7 +99,7 @@ nx.density(G_internet)
 
 import networkx.algorithms.connectivity as nxcon
 
-nxcon.minimum_st_node_cut(G_karate, mr_hi, john_a)
+nxcon.minimum_st_node_cut(G_karate, mr_hi, john_a) # Returns a set of nodes of minimum cardinality that disconnect source from target in G
 
 nxcon.minimum_st_edge_cut(G_karate, mr_hi, john_a)
 
