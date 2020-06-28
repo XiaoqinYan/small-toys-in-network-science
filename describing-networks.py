@@ -117,7 +117,7 @@ nx.node_connectivity(G_electric)
 
 nx.node_connectivity(G_internet)
 
-nx.average_node_connectivity(G_karate)
+nx.average_node_connectivity(G_karate) # the average of local node connectivity over all pairs of nodes 
 
 nx.average_node_connectivity(G_electric)
 
