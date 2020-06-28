@@ -121,7 +121,7 @@ nx.average_node_connectivity(G_karate) # the average of local node connectivity 
 
 nx.average_node_connectivity(G_electric) # the average of local node connectivity over all pairs of nodes 
 
-nx.average_node_connectivity(G_internet) 
+nx.average_node_connectivity(G_internet)  # the average of local node connectivity over all pairs of nodes
 # Function to plot a single histogram
 def centrality_histogram(x, title=None):
     plt.hist(x, density=True)
