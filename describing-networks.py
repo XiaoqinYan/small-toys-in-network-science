@@ -103,7 +103,7 @@ nxcon.minimum_st_node_cut(G_karate, mr_hi, john_a) # Returns a set of nodes of m
 
 nxcon.minimum_st_edge_cut(G_karate, mr_hi, john_a)
 
-nx.node_connectivity(G_karate, mr_hi, john_a)
+nx.node_connectivity(G_karate, mr_hi, john_a) # Returns an approximation for node connectivity for a graph or digraph G
 
 nx.edge_connectivity(G_karate, mr_hi, john_a)
 
