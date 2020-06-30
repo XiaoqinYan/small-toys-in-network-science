@@ -107,7 +107,7 @@ nx.node_connectivity(G_karate, mr_hi, john_a) # Returns an approximation for nod
 
 nx.edge_connectivity(G_karate, mr_hi, john_a)
 
-nxcon.minimum_node_cut(G_karate)
+nxcon.minimum_node_cut(G_karate) # Returns a set of nodes of minimum cardinality that disconnects G
 
 nxcon.minimum_edge_cut(G_karate)
 
