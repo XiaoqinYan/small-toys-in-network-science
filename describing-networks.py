@@ -111,7 +111,7 @@ nxcon.minimum_node_cut(G_karate) # Returns a set of nodes of minimum cardinality
 
 nxcon.minimum_edge_cut(G_karate)
 
-nx.node_connectivity(G_karate)
+nx.node_connectivity(G_karate) # Returns an approximation for node connectivity for a graph or digraph G
 
 nx.node_connectivity(G_electric)
 
