@@ -162,7 +162,7 @@ ax.set_aspect(1)
 
 nx.average_clustering(G_air) # Compute the average bipartite clustering coefficient.
 
-nx.average_clustering(G_residual)
+nx.average_clustering(G_residual) # # Compute the average bipartite clustering coefficient.
 
 G_wiki = nx.read_edgelist(
     str(data_dir / 'ligtenberg2017' / 'wikilinks.csv'),
