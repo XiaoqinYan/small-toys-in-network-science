@@ -16,7 +16,7 @@ random.seed(seed)
 # Import NetworkX
 import networkx as nx
 
-G = nx.karate_club_graph()
+G = nx.karate_club_graph() # Each node in the returned graph has a node attribute ‘club’ that indicates the name of the club to which the member represented by that node belongs, either ‘Mr. Hi’ or ‘Officer’.
 # Annotate with splinter club label
 member_club = [
     0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
