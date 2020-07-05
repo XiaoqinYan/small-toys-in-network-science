@@ -14,7 +14,7 @@ from pathlib import Path
 data_dir = Path('.') / 'data'
 
 # Load karate club network
-G_karate = nx.karate_club_graph()
+G_karate = nx.karate_club_graph() # # Each node in the returned graph has a node attribute ‘club’ that indicates the name of the club to which the member represented by that node belongs, either ‘Mr. Hi’ or ‘Officer’.
 mr_hi = 0
 john_a = 33
 
