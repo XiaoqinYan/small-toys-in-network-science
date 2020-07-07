@@ -35,7 +35,7 @@ with open(data_dir / 'crossley2012' / '50_ALL_2M.csv') as f:
 from networkx import bipartite
 G = bipartite.projected_graph(B, people)
 
-betweenness = nx.betweenness_centrality(G, normalized=False)
+betweenness = nx.betweenness_centrality(G, normalized=False) #the sum of the fraction of all-pairs shortest paths that pass through 
 sorted(betweenness.items(), key=lambda x:x[1], reverse=True)[0:10]
 
 eigenvector = nx.eigenvector_centrality(G) #Compute the eigenvector centrality for the graph G
