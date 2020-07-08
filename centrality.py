@@ -44,7 +44,7 @@ sorted(eigenvector.items(), key=lambda x:x[1], reverse=True)[0:10]
 closeness = nx.closeness_centrality(G) # Compute the closeness centrality for nodes in a bipartite network
 sorted(closeness.items(), key=lambda x:x[1], reverse=True)[0:10]
 
-triangles = nx.triangles(G) 
+triangles = nx.triangles(G) # Finds the number of triangles that include a node as one vertex.
 sorted(triangles.items(), key=lambda x:x[1], reverse=True)[0:10]
 
 clustering = nx.clustering(G)
