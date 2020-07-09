@@ -47,6 +47,7 @@ sorted(closeness.items(), key=lambda x:x[1], reverse=True)[0:10]
 triangles = nx.triangles(G) # Finds the number of triangles that include a node as one vertex.
 sorted(triangles.items(), key=lambda x:x[1], reverse=True)[0:10]
 
-clustering = nx.clustering(G)
+clustering = nx.clustering(G) # Estimates the average clustering coefficient of G.
+
 [(x, clustering[x]) for x in sorted(people, key=lambda x:eigenvector[x], reverse=True)[0:10]]
 
