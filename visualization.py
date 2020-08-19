@@ -192,9 +192,3 @@ nx.draw_networkx(
     G, pos=pos, node_size=100, node_color=node_color,
     edge_color='#999999', with_labels=False)
 
-plt.figure(figsize=(15,15))
-pos = nx.spring_layout(G, pos=pos)
-nx.draw_networkx(
-    G, pos=pos, node_size=0, edge_color='#999999', with_labels=True)
-# Add margin for labels
-plt.xlim([-1.1, 1.1])
