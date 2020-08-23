@@ -123,3 +123,4 @@ def co_occurrence_network(text):
                     # Edge doesn't exist, create it
                     G.add_edge(v, w, count=1)
     
+return G
