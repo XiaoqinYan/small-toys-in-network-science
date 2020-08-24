@@ -40,7 +40,7 @@ except NetworkXError as e:
     # Not an affiliation network
     print(e)
 
-bipartite.is_bipartite(B) # Returns True if graph G is bipartite, False if not.
+bipartite.is_bipartite(B) 
 
 # Create data directory path
 from pathlib import Path
