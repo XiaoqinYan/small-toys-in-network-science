@@ -18,7 +18,8 @@ import networkx as nx
 
 import networkx.algorithms.community as nxcom
 # Generate the network
-G_karate = nx.karate_club_graph() # Each node in the returned graph has a node attribute ‘club’ that indicates the name of the club to which the member represented by that node belongs, either ‘Mr. Hi’ or ‘Officer’.
+G_karate = nx.karate_club_graph() 
+elongs, either ‘Mr. Hi’ or ‘Officer’.
 # Find the communities
 communities = sorted(nxcom.greedy_modularity_communities(G_karate), key=len, reverse=True)
 # Count the communities
