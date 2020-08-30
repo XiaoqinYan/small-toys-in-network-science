@@ -36,7 +36,7 @@ def tie_strength(G, v, w):
     v_neighbors = set(G.neighbors(v))
     w_neighbors = set(G.neighbors(w))
     # Return size of the set intersection
-    return 1 + len(v_neighbors & w_neighbors) #return the numbers of v_neighbors and w_eighbors len==length
+    return 1 + len(v_neighbors & w_neighbors) 
 
 strength = dict(
     ((v,w), tie_strength(G, v, w))
