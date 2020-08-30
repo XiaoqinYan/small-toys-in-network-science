@@ -79,7 +79,7 @@ for e, edge_strength in ordered_edges[-10:]:
         str(e), edge_strength, span[e], G.edges[e]['internal']
     ))
     
-G_small_ring = nx.watts_strogatz_graph(16, 4, 0) # Returns a Watts–Strogatz small-world graph.
+G_small_ring = nx.watts_strogatz_graph(16, 4, 0) 
 pos = nx.circular_layout(G_small_ring) # Position nodes on a circle
 nx.draw_networkx(G_small_ring, pos=pos, with_labels=False)
 
