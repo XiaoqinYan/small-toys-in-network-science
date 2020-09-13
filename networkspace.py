@@ -74,7 +74,7 @@ for v in G_air.nodes:
 # Draw network geographically
 fig = plt.figure(figsize=(15,15))
 ax = plt.subplot(1, 1, 1)
-max_weight = max([G_air.edges[e]['count'] for e in G_air.edges]) # Compute a maximum-weighted matching of G.
+max_weight = max([G_air.edges[e]['count'] for e in G_air.edges])
 nx.draw_networkx_nodes(G_air, pos=pos, node_color='#7f7fff', node_size=20)
 for e in G_air.edges:
     alpha = G_air.edges[e]['count'] / max_weight
