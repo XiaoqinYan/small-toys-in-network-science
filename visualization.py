@@ -16,7 +16,8 @@ random.seed(seed)
 # Import NetworkX
 import networkx as nx
 
-G_karate = nx.karate_club_graph() # Each node in the returned graph has a node attribute ‘club’ that indicates the name of the club to which the member represented by that node belongs, either ‘Mr. Hi’ or ‘Officer’.
+G_karate = nx.karate_club_graph() 
+the club to which the member represented by that node belongs, either ‘Mr. Hi’ or ‘Officer’.
 
 nx.draw_networkx(G_karate, pos=nx.circular_layout(G_karate))
 
