@@ -129,5 +129,8 @@ networks = {
     'Watts-Strogatz (p=0.3)': nx.watts_strogatz_graph(34, 6, 0.1),
     'Watts-Strogatz (p=1)': nx.watts_strogatz_graph(34, 6, 1)}
 
-
-
+for i, (title, G) in enumerate(networks.items()):
+    plt.subplot(3, 2, i + 1)
+    plt.title(title)
+    plot_beliefs(G, beliefs, 42)
+plt.tight_layout()
