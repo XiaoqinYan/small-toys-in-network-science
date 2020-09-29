@@ -101,7 +101,7 @@ nx.draw_networkx_nodes(G, pos, node_color="#9f9fff", node_size=6000)
 nx.draw_networkx_labels(G, pos)
 plt.savefig('output-4.3.png', dpi=150)
 
-G = bipartite.weighted_projected_graph(B, plants) #Returns a weighted projection of B onto one of its node sets
+G = bipartite.weighted_projected_graph(B, plants) 
 list(G.edges(data=True))[0]
 
 # Create co-affiliation network
