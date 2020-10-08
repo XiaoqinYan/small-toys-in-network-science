@@ -64,7 +64,7 @@ external = [(v, w) for v, w in G_karate.edges if G_karate.edges[v, w]['community
 internal = [(v, w) for v, w in G_karate.edges if G_karate.edges[v, w]['community'] > 0]
 internal_color = [get_color(G_karate.edges[e]['community']) for e in internal]
 
-karate_pos = nx.spring_layout(G_karate) # Position nodes using Fruchterman-Reingold force-directed algorithm
+karate_pos = nx.spring_layout(G_karate) 
 # Draw external edges
 nx.draw_networkx(
     G_karate,
