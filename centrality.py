@@ -38,7 +38,7 @@ G = bipartite.projected_graph(B, people)
 betweenness = nx.betweenness_centrality(G, normalized=False) 
 sorted(betweenness.items(), key=lambda x:x[1], reverse=True)[0:10]
 
-eigenvector = nx.eigenvector_centrality(G) #Compute the eigenvector centrality for the graph G
+eigenvector = nx.eigenvector_centrality(G) 
 sorted(eigenvector.items(), key=lambda x:x[1], reverse=True)[0:10]
 
 closeness = nx.closeness_centrality(G) # Compute the closeness centrality for nodes in a bipartite network
