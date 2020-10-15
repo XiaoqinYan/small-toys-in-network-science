@@ -44,7 +44,7 @@ sorted(eigenvector.items(), key=lambda x:x[1], reverse=True)[0:10]
 closeness = nx.closeness_centrality(G) 
 sorted(closeness.items(), key=lambda x:x[1], reverse=True)[0:10]
 
-triangles = nx.triangles(G) # Finds the number of triangles that include a node as one vertex.
+triangles = nx.triangles(G) # Finds the number of triangles that include 
 sorted(triangles.items(), key=lambda x:x[1], reverse=True)[0:10]
 
 clustering = nx.clustering(G) # Estimates the average clustering coefficient of G.
