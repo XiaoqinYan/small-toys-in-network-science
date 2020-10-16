@@ -54,7 +54,7 @@ nx.shortest_path_length(G_karate, mr_hi, john_a)
 length_source_target = dict(nx.shortest_path_length(G_karate))
 length_source_target[0][33]
 
-def path_length_histogram(G, title=None): # Returns a list of the frequency of each degree value.
+def path_length_histogram(G, title=None): 
     # Find path lengths
     length_source_target = dict(nx.shortest_path_length(G))
     # Convert dict of dicts to flat list
