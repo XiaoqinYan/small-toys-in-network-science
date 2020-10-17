@@ -7,7 +7,7 @@ plt.rcParams.update({
     'axes.spines.left': False,
     'axes.spines.top': False,
     'axes.spines.bottom': False})
-# Seed random number generator
+
 import random
 from numpy import random as nprand
 seed = hash("Network Science in Python") % 2**32
