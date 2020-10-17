@@ -223,7 +223,7 @@ for i in range(24):
         month -= 12
         year += 1
         
-# Create figure
+
 plt.figure(figsize=(7.5, 4))
 ax = plt.subplot(1, 1, 1)
 for spine in ax.spines.values():
