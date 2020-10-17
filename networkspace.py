@@ -16,7 +16,7 @@ random.seed(seed)
 # Import NetworkX
 import networkx as nx
 
-# Load data file into network
+
 from pathlib import Path
 data_dir = Path('.') / 'data'
 G_air = nx.Graph()
