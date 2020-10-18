@@ -13,7 +13,7 @@ from numpy import random as nprand
 seed = hash("Network Science in Python") % 2**32
 nprand.seed(seed)
 random.seed(seed)
-# Import NetworkX
+
 import networkx as nx
 
 
